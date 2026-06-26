@@ -1,4 +1,4 @@
-## Water CRM
+# Water CRM
 
 Internal order management system for a water delivery business.
 
@@ -6,7 +6,7 @@ Workers create and manage customer orders, while couriers update delivery status
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 - Python 3.13
 - FastAPI
@@ -17,16 +17,16 @@ Workers create and manage customer orders, while couriers update delivery status
 
 ---
 
-# Getting Started
+## Getting Started
 
-## 1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your_username/water-crm.git
 cd water-crm
 ```
 
-## 2. Create a virtual environment
+### 2. Create a virtual environment
 
 Linux / macOS
 
@@ -42,7 +42,7 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-## 3. Install dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 ---
 
-# Environment Variables
+## Environment Variables
 
 Copy the example environment file:
 
@@ -68,7 +68,7 @@ BOT_TOKEN=your_telegram_bot_token
 
 ---
 
-# Running PostgreSQL
+## Running PostgreSQL
 
 Start PostgreSQL using Docker:
 
@@ -83,7 +83,7 @@ docker run --name water-db \
 
 ---
 
-# Database Migration
+## Database Migration
 
 Apply Alembic migrations:
 
@@ -93,7 +93,7 @@ alembic upgrade head
 
 ---
 
-# Running the Server
+## Running the Server
 
 Start the development server:
 
@@ -121,7 +121,7 @@ http://localhost:8000/redoc
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```
 app/
@@ -144,22 +144,22 @@ app/
 
 ---
 
-# Example API Request
+## Example API Request
 
-## Create Order
+### Create Order
 
 ```http
 POST /orders/
 ```
 
-### Headers
+#### Headers
 
 ```http
 Content-Type: application/json
 init-data: <telegram_init_data>
 ```
 
-### Request Body
+#### Request Body
 
 ```json
 {
@@ -176,7 +176,7 @@ init-data: <telegram_init_data>
 }
 ```
 
-### cURL
+#### cURL
 
 ```bash
 curl -X POST http://localhost:8000/orders/ \
@@ -196,7 +196,7 @@ curl -X POST http://localhost:8000/orders/ \
   }'
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -219,7 +219,7 @@ curl -X POST http://localhost:8000/orders/ \
 
 ---
 
-# Features
+## Features
 
 - REST API built with FastAPI
 - Async SQLAlchemy 2.0
