@@ -8,25 +8,20 @@ Workers create and manage customer orders, while couriers update delivery status
 
 ## Tech Stack
 
-- Python 3.13
-- FastAPI
-- PostgreSQL 16
-- SQLAlchemy 2.0 (Async)
-- Alembic
-- Docker
+Python 3.13 - FastAPI - PostgreSQL - SQLAlchemy 2.0 (Async) - Alembic - Docker
 
 ---
 
 ## Getting Started
 
-### 1. Clone the repository
+1. Clone the repository
 
 ```bash
 git clone https://github.com/your_username/water-crm.git
 cd water-crm
 ```
 
-### 2. Create a virtual environment
+2. Create a virtual environment
 
 Linux / macOS
 
@@ -42,7 +37,7 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -51,12 +46,6 @@ pip install -r requirements.txt
 ---
 
 ## Environment Variables
-
-Copy the example environment file:
-
-```bash
-cp .env.example .env
-```
 
 Configure the following variables inside `.env`:
 
@@ -111,12 +100,6 @@ Swagger documentation:
 
 ```
 http://localhost:8000/docs
-```
-
-ReDoc documentation:
-
-```
-http://localhost:8000/redoc
 ```
 
 ---
